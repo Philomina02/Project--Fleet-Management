@@ -125,7 +125,7 @@ onValue(truck1Ref, (snapshot) => {
       const longitude1 = data.longitude;
 
       // Update the mock data team
-      mockDataTeam.forEach((item) => {
+      mockdataTeam.forEach((item) => {
         if (item.id === 1) {
           item.driver = driver1;
           item.rc = rc1;
@@ -137,12 +137,12 @@ onValue(truck1Ref, (snapshot) => {
         }
       });
 
-      console.log("Updated mockDataTeam:", mockDataTeam); // Log updated mockDataTeam
+      console.log("Updated mockdataTeam:", mockdataTeam); // Log updated mockdataTeam
     } else {
       console.log("Snapshot does not exist");
     }
   } catch (error) {
-    console.error("Error updating mockDataTeam:", error);
+    console.error("Error updating mockdataTeam:", error);
   }
 });
 
@@ -161,7 +161,7 @@ onValue(truck2Ref, (snapshot) => {
       const longitude1 = data.longitude;
 
       // Update the mock data team
-      mockDataTeam.forEach((item) => {
+      mockdataTeam.forEach((item) => {
         if (item.id === 2) {
           item.driver = driver1;
           item.rc = rc1;
@@ -173,12 +173,12 @@ onValue(truck2Ref, (snapshot) => {
         }
       });
 
-      console.log("Updated mockDataTeam:", mockDataTeam); // Log updated mockDataTeam
+      console.log("Updated mockdataTeam:", mockdataTeam); // Log updated mockDataTeam
     } else {
       console.log("Snapshot does not exist");
     }
   } catch (error) {
-    console.error("Error updating mockDataTeam:", error);
+    console.error("Error updating mockdataTeam:", error);
   }
 });
 
@@ -197,7 +197,7 @@ onValue(truck3Ref, (snapshot) => {
       const longitude1 = data.longitude;
 
       // Update the mock data team
-      mockDataTeam.forEach((item) => {
+      mockdataTeam.forEach((item) => {
         if (item.id === 3) {
           item.driver = driver1;
           item.rc = rc1;
@@ -209,11 +209,11 @@ onValue(truck3Ref, (snapshot) => {
         }
       });
 
-      console.log("Updated mockDataTeam:", mockDataTeam); // Log updated mockDataTeam
+      console.log("Updated mockdataTeam:", mockdataTeam); // Log updated mockDataTeam
     } else {
       console.log("Snapshot does not exist");
     }
   } catch (error) {
-    console.error("Error updating mockDataTeam:", error);
+    console.error("Error updating mockdataTeam:", error);
   }
 });

@@ -1,19 +1,14 @@
-import Topbar from "./scenes/global/Topbar";
+import Topbar from "./scenes/global/topbar";
 import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { Route, Routes } from "react-router-dom";
-import Sidebar from "./scenes/global/Sidebar";
+import Sidebar from "./scenes/global/sidebar";
 import Dashboard from "./scenes/dashboard";
 
 import Truck from "./scenes/truck";
-import Train from "./scenes/train";
-import Ship from "./scenes/ship";
-import Flight from "./scenes/flight";
+
 import GlobalMap from "./scenes/globalmap";
-import Warehouse from "./scenes/warehouse";
-import RailwayWarehouse from "./scenes/railwaywarehouse";
-import Airport from "./scenes/airport";
-import Port from "./scenes/port";
+
 /*import Bar from "./scenes/bar";
 import Form from "./scenes/form";
 import Line from "./scenes/line";
@@ -40,14 +35,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/truck" element={<Truck />} />
-              <Route path="/train" element={<Train />} />
-              <Route path="/ship" element={<Ship />} />
-              <Route path="/flight" element={<Flight />} />
+
               <Route path="/globalmap" element={<GlobalMap />} />
-              <Route path="/warehouse" element={<Warehouse />} />
-              <Route path="/railwaywarehouse" element={<RailwayWarehouse />} />
-              <Route path="/airport" element={<Airport />} />
-              <Route path="/port" element={<Port />} />
             </Routes>
           </main>
         </div>

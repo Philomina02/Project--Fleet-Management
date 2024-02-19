@@ -20,12 +20,6 @@ import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 import BatteryCharging20Icon from "@mui/icons-material/BatteryCharging20";
 import ErrorIcon from "@mui/icons-material/Error";
 import FlashOnIcon from "@mui/icons-material/FlashOn";
-import MapIcon from "@mui/icons-material/Map";
-import LocalShippingIcon from "@mui/icons-material/LocalShipping";
-import TrainIcon from "@mui/icons-material/Train";
-import DirectionsBoatFilledIcon from "@mui/icons-material/DirectionsBoatFilled";
-import AirplanemodeActiveIcon from "@mui/icons-material/AirplanemodeActive";
-import WarehouseIcon from "@mui/icons-material/Warehouse";
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -155,63 +149,11 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-            <Item
-              title="Train"
-              to="/train"
-              icon={<TrainIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Ship"
-              to="/ship"
-              icon={<DirectionsBoatFilledIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Flight"
-              to="/flight"
-              icon={<AirplanemodeActiveIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
 
             <Typography
               variant="h6"
               color={colors.grey[300]}
               sx={{ m: "15px 0 5px 20px" }}
-            >
-              Storage
-            </Typography>
-
-            <Item
-              title="Warehouse"
-              to="/warehouse"
-              icon={<WarehouseIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Railway Warehouse"
-              to="/railwaywarehouse"
-              icon={<WarehouseIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Airport"
-              to="/airport"
-              icon={<WarehouseIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Port"
-              to="/port"
-              icon={<WarehouseIcon />}
-              selected={selected}
-              setSelected={setSelected}
             />
           </Box>
         </Menu>

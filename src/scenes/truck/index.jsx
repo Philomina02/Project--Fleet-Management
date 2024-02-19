@@ -1,11 +1,11 @@
 import { Box, Card, CardContent, Typography, useTheme } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import { tokens } from "../../theme";
-import { mockDataTeam } from "../../data/mockData";
+import { mockdataTeam } from "../../data/mockdata";
 import AdminPanelSettingsOutlinedIcon from "@mui/icons-material/AdminPanelSettingsOutlined";
 import LockOpenOutlinedIcon from "@mui/icons-material/LockOpenOutlined";
 import SecurityOutlinedIcon from "@mui/icons-material/SecurityOutlined";
-import Header from "../../components/Header";
+import header from "../../components/header";
 import React, { useState } from "react";
 
 const Truck = () => {
@@ -77,7 +77,7 @@ const Truck = () => {
 
   return (
     <Box m="20px">
-      <Header title="Trucks" subtitle="Managing the trucks" />
+      <header title="Trucks" subtitle="Managing the trucks" />
       <Box onClick={toggleCard}>
         <Card
           style={{
@@ -231,12 +231,12 @@ const Truck = () => {
                           <!-- Content for the second column -->
                           <!-- Latitude Display -->
                           <p id="latitude">Latitude:</p>
-                          <p>ID: ${mockDataTeam[0].id}</p>
-                          <p>Driver: ${mockDataTeam[0].driver}</p>
-                          <p>RC: ${mockDataTeam[0].rc}</p>
-                          <p>Route: ${mockDataTeam[0].route}</p>
-                          <p>Distance: ${mockDataTeam[0].distance}</p>
-                          <p>Status: ${mockDataTeam[0].status}</p>
+                          <p>ID: ${mockdataTeam[0].id}</p>
+                          <p>Driver: ${mockdataTeam[0].driver}</p>
+                          <p>RC: ${mockdataTeam[0].rc}</p>
+                          <p>Route: ${mockdataTeam[0].route}</p>
+                          <p>Distance: ${mockdataTeam[0].distance}</p>
+                          <p>Status: ${mockdataTeam[0].status}</p>
                         </div>
                         <div class="column" , style="line-height: 0.25">
                           <!-- Content for the second column -->
@@ -353,7 +353,7 @@ const Truck = () => {
           },
         }}
       >
-        <DataGrid checkboxSelection rows={mockDataTeam} columns={columns} />
+        <DataGrid checkboxSelection rows={mockdataTeam} columns={columns} />
       </Box>
     </Box>
   );

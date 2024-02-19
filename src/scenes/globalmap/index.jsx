@@ -1,5 +1,5 @@
 import { Box, Card, CardContent } from "@mui/material";
-import Header from "../../components/Header";
+import Header from "../../components/header";
 import Map from "mapmyindia-react";
 
 const GlobalMap = () => {

@@ -1,11 +1,11 @@
 import { Box, Card, CardContent, Typography, useTheme } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import { tokens } from "../../theme";
-import { mockdataTeam } from "../../data/mockdata";
+import { mockdataTeam } from "../../data/mockData";
 import AdminPanelSettingsOutlinedIcon from "@mui/icons-material/AdminPanelSettingsOutlined";
 import LockOpenOutlinedIcon from "@mui/icons-material/LockOpenOutlined";
 import SecurityOutlinedIcon from "@mui/icons-material/SecurityOutlined";
-import header from "../../components/header";
+import header from "../../components/Header";
 import React, { useState } from "react";
 
 const Truck = () => {
